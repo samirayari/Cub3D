@@ -37,7 +37,7 @@ void	start_angle(t_general *g)
 
 void	find_pix(t_general *g)
 {
-	if (g->r.co == 1)
+	if (g->r.co == 1) // si c'est verticale
 		g->img.tx = fmod(g->img.y / g->m.size_case, 1.0) * 64.0;
 	else if (g->r.co == 2)
 		g->img.tx = fmod(g->img.x / g->m.size_case, 1.0) * 64.0;
